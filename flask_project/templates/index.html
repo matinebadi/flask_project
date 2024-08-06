@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ 
+    <h1 class="text-danger">Home page</h1>
+    <hr>
+    <ul>
+        {% for key,  title in blogs.items() %}
+        <li>{{key}} => {{title}}</li>
+        {% endfor %}
+    </ul>
+   
+{% endblock content %}
